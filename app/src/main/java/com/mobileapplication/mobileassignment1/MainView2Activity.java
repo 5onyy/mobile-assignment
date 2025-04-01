@@ -7,12 +7,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainView1Activity extends AppCompatActivity {
+public class MainView2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // If your layout file is mainview1.xml, reference it here:
-        setContentView(R.layout.mainview1);
+        // If your layout file is mainview2.xml, reference it here:
+        setContentView(R.layout.mainview2);
     }
 }
 
