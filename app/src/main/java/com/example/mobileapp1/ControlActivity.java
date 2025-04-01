@@ -33,9 +33,24 @@ public class ControlActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control);
 
-        ImageButton myButton = findViewById(R.id.BackButton);
-        myButton.setOnClickListener(v -> {
+        // Setting Back Button
+        ImageButton BackButton = findViewById(R.id.BackButton);
+        BackButton.setOnClickListener(v -> {
             Intent intent = new Intent(ControlActivity.this, MainActivity.class);       // ve lai trang truoc
+            startActivity(intent);
+        });
+
+        // Use when finish the back page?
+//        ImageButton backButton = findViewById(R.id.BackButton);
+//        backButton.setOnClickListener(v -> {
+//            finish();
+//        });
+
+        // Set Camera Button
+        ImageButton cameraButton = findViewById(R.id.CameraSwitchButton);
+
+        cameraButton.setOnClickListener(v -> {
+            Intent intent = new Intent(ControlActivity.this, CameraModeActivity.class);
             startActivity(intent);
         });
 
