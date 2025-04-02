@@ -27,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+//        setContentView(R.layout.mainview1);
     }
 }

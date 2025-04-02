@@ -3,5 +3,5 @@
     <!-- Set the background color -->
     <solid android:color="#ffff" />
     <!-- Adjust the corner radius for fully rounded (pill) edges -->
-    <corners android:radius="20dp" />
+    <corners android:radius="60dp" />
 </shape>
