@@ -15,9 +15,12 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);  // Create a corresponding layout file (activity_home.xml)
 
         TextView ivBackArrow = findViewById(R.id.footer);
-        ivBackArrow.setOnClickListener(view -> {
-            // Go back or finish this activity
-            finish();
+        ivBackArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
         });
 
         Button button1 = findViewById(R.id.button1);
@@ -34,8 +37,8 @@ public class HomeActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // For example, if you have MainView2Activity:
-                Intent intent = new Intent(HomeActivity.this, MainView2Activity.class);
+                // For example, if you have ControlActivity:
+                Intent intent = new Intent(HomeActivity.this, ControlActivity.class);
                 startActivity(intent);
             }
         });
