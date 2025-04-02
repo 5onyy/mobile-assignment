@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Set the background color -->
+    <solid android:color="#ffff" />
+    <!-- Adjust the corner radius for fully rounded (pill) edges -->
+    <corners android:radius="60dp" />
+</shape>
